@@ -1,0 +1,33 @@
+[debug] [2023-04-19T11:56:49.742Z] ----------------------------------------------------------------------
+[debug] [2023-04-19T11:56:49.746Z] Command:       D:\nodejs\node.exe C:\Users\Quim Torra\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-04-19T11:56:49.747Z] CLI Version:   11.28.0
+[debug] [2023-04-19T11:56:49.747Z] Platform:      win32
+[debug] [2023-04-19T11:56:49.747Z] Node Version:  v18.15.0
+[debug] [2023-04-19T11:56:49.748Z] Time:          Wed Apr 19 2023 13:56:49 GMT+0200 (Central European Summer Time)
+[debug] [2023-04-19T11:56:49.749Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-19T11:56:49.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-19T11:56:49.833Z] > authorizing via signed-in user (q.torra@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-04-19T11:56:49.848Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-19T11:56:49.849Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-04-19T11:56:49.857Z] [hub] writing locator at C:\Users\QUIMTO~1\AppData\Local\Temp\hub-l-esmorzador.json
+[debug] [2023-04-19T11:56:49.883Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-19T11:56:49.884Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-19T11:56:49.884Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-04-19T11:56:49.894Z] defaultcredentials: writing to file C:\Users\Quim Torra\AppData\Roaming\firebase\q_torra_gmail.com_application_default_credentials.json
+[debug] [2023-04-19T11:56:49.906Z] Setting GAC to C:\Users\Quim Torra\AppData\Roaming\firebase\q_torra_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Quim Torra\\AppData\\Roaming\\firebase\\q_torra_gmail.com_application_default_credentials.json"}}
+[debug] [2023-04-19T11:56:49.909Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/l-esmorzador/adminSdkConfig [none]
+[debug] [2023-04-19T11:56:50.254Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/l-esmorzador/adminSdkConfig 200
+[debug] [2023-04-19T11:56:50.255Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/l-esmorzador/adminSdkConfig {"projectId":"l-esmorzador","databaseURL":"https://l-esmorzador-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"l-esmorzador.appspot.com","locationId":"europe-west"}
+[debug] [2023-04-19T11:56:50.278Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-19T11:56:50.279Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-19T11:56:50.279Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Quim Torra\\.cache\\firebase\\emulators\\ui-v1.11.5\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Quim Torra\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.5\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-04-19T11:56:50.416Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-04-19T11:56:50.417Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "D:\RCP\Esmorzador\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\RCP\\Esmorzador\\functions\" for Cloud Functions..."}}
+[debug] [2023-04-19T11:56:50.555Z] Validating nodejs source
