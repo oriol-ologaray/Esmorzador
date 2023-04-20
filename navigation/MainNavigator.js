@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreen from "../screens/WelcomeScreen";
-import MainScreen from "../screens/MainScreen";
+import CameraScreen from "../screens/CameraScreen";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,7 @@ export default function MainNavigator() {
       }}
     >
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
-      <Stack.Screen name="Main" component={MainScreen} />
+      <Stack.Screen name="Camera" component={CameraScreen} />
     </Stack.Navigator>
   );
 }

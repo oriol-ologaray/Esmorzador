@@ -3,12 +3,15 @@ import colors from "../colors";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.background}>
       <Text style={styles.title}>No has sortit a esmorzar a temps. 🥺</Text>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("Camera")}
+        >
           <Text style={styles.buttonText}>PENJA LA TEVA EXCUSA</Text>
         </TouchableOpacity>
       </View>
