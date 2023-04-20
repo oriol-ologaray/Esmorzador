@@ -9,6 +9,7 @@ import {
   TouchableWithoutFeedback,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Timer } from "react-native-stopwatch-timer";
 import { Camera, CameraType } from "expo-camera";
 
 export default function CameraScreen({ navigation }) {
@@ -22,12 +23,12 @@ export default function CameraScreen({ navigation }) {
 
   if (!permission.granted) {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Text style={{ textAlign: "center" }}>
           We need your permission to show the camera
         </Text>
         <Button onPress={requestPermission} title="grant permission" />
-      </View>
+      </SafeAreaView>
     );
   }
 
@@ -43,7 +44,7 @@ export default function CameraScreen({ navigation }) {
     setTimeout(async () => {
       const second = await takePicture();
       handleImages(first, second);
-    }, 2000);
+    }, 1500);
   };
 
   function handleImages(first, second) {
@@ -63,7 +64,15 @@ export default function CameraScreen({ navigation }) {
 
   return (
     <SafeAreaView style={styles.background}>
-      <Text style={styles.title}>02:00</Text>
+      <Timer
+        totalDuration={120000}
+        start={true}
+        options={options}
+        //options for the styling
+        handleFinish={() => {
+          alert("Custom Completion Function");
+        }}
+      />
       <Camera style={styles.camera} type={type} ratio="4:3" ref={cameraRef}>
         <TouchableWithoutFeedback onPress={toggleCameraType}>
           <View style={{ flex: 1 }} />
@@ -107,3 +116,16 @@ const styles = StyleSheet.create({
     fontWeight: "900",
   },
 });
+
+const options = {
+  container: {
+    padding: 5,
+    width: 200,
+    alignItems: "center",
+  },
+  text: {
+    color: colors.white,
+    fontSize: 65,
+    fontWeight: "900",
+  },
+};
