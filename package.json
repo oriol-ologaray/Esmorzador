@@ -9,11 +9,18 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^17.4.2",
+    "@react-native-firebase/database": "^17.4.2",
     "dotenv": "^16.0.3",
     "expo": "~48.0.11",
+    "expo-device": "~5.2.1",
+    "expo-notifications": "~0.18.1",
     "expo-status-bar": "~1.4.4",
+    "firebase": "^9.20.0",
     "react": "18.2.0",
-    "react-native": "0.71.6"
+    "react-native": "0.71.6",
+    "react-native-config": "^1.5.0",
+    "react-native-push-notification": "^8.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
